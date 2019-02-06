@@ -13,7 +13,7 @@
         die();
     }
 ?>
-    <form action="./myhoroscope.php" method="POST">
+    <form action="./checker.php" method="POST">
         <input type="text" name="förnamn" placeholder="Förnamn"><br><br>
         <input type="text" name="efternamn" placeholder="Efternamn"><br><br>
         <input type="number" name="personnr" placeholder="Personnummer" ><br><br>
