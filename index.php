@@ -7,10 +7,16 @@
     <title>Horoskop</title>
 </head>
 <body>
+<?php
+    if(isset($_COOKIE['myCookie'])){
+        header("Location: myhoroscope.php");
+        die();
+    }
+?>
     <form action="./myhoroscope.php" method="POST">
-        <input type="text" placeholder="Förnamn" name="firstname"><br><br>
-        <input type="text" placeholder="Efternamn" name="lastname"><br><br>
-        <input type="number" placeholder="Personnummer" name="birthDate"><br><br>
+        <input type="text" name="förnamn" placeholder="Förnamn"><br><br>
+        <input type="text" name="efternamn" placeholder="Efternamn"><br><br>
+        <input type="number" name="personnr" placeholder="Personnummer" ><br><br>
         <input type="submit">
     </form>
 </body>
